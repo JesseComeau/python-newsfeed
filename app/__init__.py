@@ -24,6 +24,6 @@ def create_app(test_config=None):
   app.jinja_env.filters['format_date'] = filters.format_date
   app.jinja_env.filters['format_plural'] = filters.format_plural
 
-  init_db()
+  init_db(app)
 
   return app
